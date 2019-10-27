@@ -1,0 +1,301 @@
+$font-main: 'Montserrat', sans-serif;
+$font-text: 'Roboto Slab', serif;
+
+$color-white: #ffffff;
+$color-yellow: #fed136;
+$color-blue: #00aced;
+$color-purple: #3b5998;
+$color-dark-red: #cb2028;
+$color-red: #da2713;
+$color-light-grey: #777777;
+$color-grey: #737373;
+$color-dark-grey: #555555;
+$color-black: #000000;
+$color-light-black: #333333;
+$color-section-title: #222222;
+$color-portfolio: #f7f7f7;
+
+/* Global */
+
+
+body {
+    margin: 0 auto;
+    max-width: 1400px;
+    text-align: center;
+}
+
+.section-title {
+    color: $color-section-title;
+    font-family: $font-main;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 75px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 0;
+    padding: 120px 0 0 0;
+}
+
+.section-subtitle {
+    color: $color-light-grey;
+    font-family: $font-text;
+    font-size: 16px;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 80px 0;
+}
+
+/* Header */
+
+.splash {
+    height: 700px;
+    background-image: url('../images/Background_Image.png');
+    object-fit: cover;
+    position: relative;
+}
+
+.splash::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.splash .container .logo {
+    position: relative;
+    padding: 70px 0 0 20px;
+    z-index: 5;
+}
+
+.splash .container .nav {
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    margin: 0;
+    padding-right: 15px;
+    z-index: 10;
+}
+
+.splash .container .nav li {
+    text-decoration: none;
+    display: inline-block;
+    text-align: right;
+    padding: 65px 0 0 40px;
+}
+
+.splash .container .nav li a {
+    text-decoration: none;
+    font-family: $font-main;
+    color: $color-white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 41px;
+}
+
+.splash .container .inner-splash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 15;
+}
+
+.splash .container .inner-splash h3 {
+    color: $color-white;
+    font-family: $font-text;
+    font-size: 40px;
+    font-style: italic;
+    letter-spacing: -1px;
+}
+
+.splash .container .inner-splash h1 {
+    color: $color-white;
+    font-family: $font-main;
+    font-size: 75px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 1000px;
+    padding: 0;
+    margin: 0 0 60px 0;
+}
+
+.splash .container .inner-splash .btn {
+    text-decoration: none;
+    color: $color-white;
+    text-transform: uppercase;
+    font-family: $font-main;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 25px 50px;
+    background-color: $color-yellow;
+    border-radius: 5px;
+}
+
+.splash .container .inner-splash .btn:hover {
+    color: $color-black;
+    background-color: $color-white;
+}
+
+/* Services */
+
+.services .container i {
+    color: $color-yellow;
+    height: 68px;
+    width: 68px;
+    border: 2px solid $color-yellow;
+    border-radius: 50%;
+    line-height: 60px;
+    font-size: 30px;
+}
+
+.services .container i:hover {
+    transform: scale(1.5);
+}
+
+.services .container h5 {
+    color: $color-section-title;
+    font-family: $font-main;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.45px;
+    margin-bottom: 18px;
+    
+}
+
+.services .row {
+    padding-bottom: 120px;
+}
+
+.services .container .row p {
+    color: $color-light-grey;
+    font-family: $font-text;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+    margin: 0;
+}
+
+/* Portfolio */
+
+.portfolio {
+    background-color: $color-portfolio;
+}
+
+.portfolio .container .gallery .gallery-image {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.portfolio .container .gallery .gallery-image:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-light-grey;
+    opacity: 0.5;
+}
+
+
+.portfolio .container .gallery .gallery-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio .container .gallery .row .gallery-box {
+    margin-bottom: 50px;
+}
+
+.portfolio .container .gallery .row .gallery-box .gallery-image-description {
+    background-color: $color-white;
+    margin: 0;
+    padding: 30px 0;
+}
+
+.portfolio .container .gallery .row .gallery-box .gallery-image-description h3 {
+    color: $color-light-black;
+    font-family: $font-main;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.45px;
+    margin: 0;
+    padding: 0 0 4px 0;
+}
+
+.portfolio .container .gallery .row .gallery-box .gallery-image-description p {
+    color: $color-grey;
+    font-family: $font-text;
+    font-size: 14px;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer */
+
+footer .container .row .copyright {
+    position: relative;
+    height: 120px;
+}
+
+footer .container .row .copyright p {
+    position: absolute;
+    color: $color-dark-grey;
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer .container .row .icons {
+    position: relative;
+    height: 120px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+footer .container .row .icons a {
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 40px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+footer .container .row .icons a:hover {
+    transform: scale(1.2);
+}
+
+footer .container .row .icons a i {
+    height: 40px;
+    width: 40px;
+    background-color: $color-section-title;
+    border-radius: 50%;
+    color: $color-white;
+    line-height: 40px;
+}
+
+
+
+
+
+
+
