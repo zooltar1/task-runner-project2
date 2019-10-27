@@ -72,7 +72,7 @@ body {
     z-index: 5;
 }
 
-.splash .container .nav {
+.splash .container .navigation .nav {
     position: relative;
     display: inline-block;
     text-align: right;
@@ -82,14 +82,14 @@ body {
     z-index: 10;
 }
 
-.splash .container .nav li {
+.splash .container .navigation .nav li {
     text-decoration: none;
     display: inline-block;
     text-align: right;
     padding: 65px 0 0 40px;
 }
 
-.splash .container .nav li a {
+.splash .container .navigation .nav li a {
     text-decoration: none;
     font-family: $font-main;
     color: $color-white;
@@ -293,9 +293,177 @@ footer .container .row .icons a i {
     line-height: 40px;
 }
 
+/* Media */
 
+@media (max-width: 990px) {
 
+    /* Global */
 
+    .section-title {
+        margin: 10px 0 0 0;
+        padding: 0;
+    }
 
+    .section-subtitle {
+        margin: 0 0 30px 0;
+    }
+
+    /* Header */
+
+    .splash {
+        height: 70vh;
+    }
+
+    .splash .container .row .logo {
+        position: relative;
+        height: 40px;
+        margin: 30px 0 0 0;
+        padding: 0;
+    }
+
+    .splash .container .row .logo img {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .splash .container .row .navigation {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .splash .container .row .navigation .nav {
+        position: absolute;
+        left: 0;
+        text-align: center;
+        height: 60px;
+    }
+
+    .splash .container .row .navigation .nav li {
+        left: -20px;
+        margin: 0;
+        padding: 0 0 0 15px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .splash .container .row .navigation .nav li a {
+        padding: 0;
+        margin: 0;
+    }
+
+    .splash .container .inner-splash {
+        margin: 100px 0 0 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .splash .container .inner-splash h3 {
+        margin: 0 0 15px 0;
+        padding: 0;
+        font-size: 20px;
+        
+    }
+
+    .splash .container .inner-splash h1 {
+        margin: 0 0 40px 0;
+        padding: 0;
+        width: auto;
+        font-size: 40px;
+    }
+
+    .splash .container .inner-splash .btn {
+        margin: 0;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 15px 30px;
+    }
+
+    /* Services */
+
+    .services .container i:hover {
+        transform: scale(1.2);
+    }
+
+    .services .row {
+        padding-bottom: 0;
+    }
+
+    .services .container .row p {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    .splash {
+        height: 60vh;
+    }
+
+    .btn-menu {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        font-size: 30px;
+        z-index: 20;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 5px;
+        color: $color-yellow;
+        top: 25px;
+        right: 25px;
+    }
+
+    .btn-menu:hover {
+        color: $color-white;
+    }
+
+    .splash .container .navigation {
+        display: none;
+    }
+
+    .splash .container .inner-splash h3 {
+        padding-top: 40px;
+    }
+
+    .splash .container .inner-splash h1 {
+        width: auto;
+        font-size: 30px;
+    }
+     
+
+    /* Portfolio */
+
+    .portfolio .container .gallery .gallery-box {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+
+    footer .container .row .copyright {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer .container .row .icons {
+       text-align: center;
+       padding: 0 20px 0 0;
+    }
+
+    footer .container .row .copyright p {
+        margin: 0;
+        padding: 0;
+    }
+}
 
 
