@@ -20,7 +20,6 @@ $color-portfolio: #f7f7f7;
 
 body {
     margin: 0 auto;
-    max-width: 1400px;
     text-align: center;
 }
 
@@ -43,6 +42,10 @@ body {
     font-style: italic;
     padding: 0;
     margin: 0 0 80px 0;
+}
+
+.btn-menu {
+    display: none;
 }
 
 /* Header */
@@ -140,6 +143,7 @@ body {
 .splash .container .inner-splash .btn:hover {
     color: $color-black;
     background-color: $color-white;
+    transition: all 1s;
 }
 
 /* Services */
@@ -156,6 +160,7 @@ body {
 
 .services .container i:hover {
     transform: scale(1.5);
+    transition: all 1s;
 }
 
 .services .container h5 {
@@ -203,6 +208,7 @@ body {
     height: 100%;
     background-color: $color-light-grey;
     opacity: 0.5;
+    transition: all 1s;
 }
 
 
@@ -282,6 +288,7 @@ footer .container .row .icons a {
 
 footer .container .row .icons a:hover {
     transform: scale(1.2);
+    transition: all 1s;
 }
 
 footer .container .row .icons a i {
@@ -402,6 +409,21 @@ footer .container .row .icons a i {
 
 @media (max-width: 768px) {
 
+    /* Global */
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+    
+    section {
+        padding-top: 30px;
+    }
+
     /* Header */
 
     .splash {
@@ -420,6 +442,7 @@ footer .container .row .icons a i {
         color: $color-yellow;
         top: 25px;
         right: 25px;
+        display: block;
     }
 
     .btn-menu:hover {
