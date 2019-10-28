@@ -453,11 +453,13 @@ footer .container .row .icons a i {
         text-align: center;
         padding: 0;
         margin: 0;
+        order: 2;
     }
 
     footer .container .row .icons {
        text-align: center;
        padding: 0 20px 0 0;
+       order: 1;
     }
 
     footer .container .row .copyright p {
