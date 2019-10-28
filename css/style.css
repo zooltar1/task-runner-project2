@@ -33,8 +33,7 @@ body {
 .splash {
   height: 700px;
   background-image: url("../images/Background_Image.png");
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
   position: relative;
 }
 
